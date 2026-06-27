@@ -1,0 +1,17 @@
+{
+  "bot_token": "token_bot_telegram_kamu",
+  "allowed_users": [123456789],
+  "olt": {
+    "ip": "ip_address_olt_mu",
+    "port": 23,
+    "username": "user",
+    "password": "pass"
+  },
+  "onu_defaults": {
+    "type": "FASTLINK",
+    "tcont_1": "20M",
+    "downstream_limit": "20M",
+    "vlan": 100,
+    "service_name": "HSI"
+  }
+}
