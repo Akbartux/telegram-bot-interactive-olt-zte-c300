@@ -45,10 +45,10 @@ Buka file `config.json` dan sesuaikan:
     "bot_token": "TOKEN_DARI_BOTFATHER",
     "allowed_users": [ID_TELEGRAM_ANDA],
     "olt": {
-        "ip": "192.168.90.90",
+        "ip": "ip address olt zte kamu",
         "port": 23,
-        "username": "akbar",
-        "password": "qmdgv"
+        "username": "user",
+        "password": "pass"
     },
     "onu_defaults": {
         "type": "FASTLINK",
@@ -81,7 +81,7 @@ source venv/bin/activate
 python bot.py
 ```
 
-Output: `🤖 Bot ZTE C300 aktif | OLT: 192.168.90.90`
+Output: `🤖 Bot ZTE C300 aktif | OLT: ip address olt mu`
 
 ---
 
@@ -172,12 +172,12 @@ write
 
 **Bot tidak bisa connect ke OLT:**
 - Pastikan Mac dan OLT berada di jaringan yang sama
-- Cek IP OLT: `ping 192.168.90.90`
+- Cek IP OLT: `ping ip_address_olt_mu`
 - Pastikan port 23 (Telnet) terbuka di OLT
 
 **Login gagal:**
 - Verifikasi username/password di `config.json`
-- Coba login manual: `telnet 192.168.90.90`
+- Coba login manual: `telnet ip_address_olt_mu`
 
 **Timeout saat eksekusi:**
 - Naikkan nilai `wait` di `zte_telnet.py` jika OLT lambat merespons
